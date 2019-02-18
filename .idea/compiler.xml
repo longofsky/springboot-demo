@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="atguigu-spring-boot-starter" />
+        <module name="atguigu-spring-boot-starter-autoconfigurer" />
+        <module name="sky-spring-boot-starter" />
+        <module name="sky-spring-boot-starter-autoconfigurer" />
+        <module name="spring-boot-01-helloworld" />
+        <module name="spring-boot-01-helloworld-quick" />
+        <module name="spring-boot-02-config-02" />
+        <module name="spring-boot-02-config-autoconfig" />
+        <module name="spring-boot-04-web-restfulcrud" />
+        <module name="springboot-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atguigu-spring-boot-starter" target="1.8" />
+      <module name="atguigu-spring-boot-starter-autoconfigurer" target="1.8" />
+      <module name="sky-spring-boot-starter" target="1.8" />
+      <module name="sky-spring-boot-starter-autoconfigurer" target="1.8" />
+      <module name="spring-boot-01-helloworld" target="1.8" />
+      <module name="spring-boot-01-helloworld-quick" target="1.8" />
+      <module name="spring-boot-02-config-02" target="1.8" />
+      <module name="spring-boot-02-config-autoconfig" target="1.8" />
+      <module name="spring-boot-04-web-restfulcrud" target="1.8" />
+      <module name="springboot-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-02-config-autoconfig" options="-parameters" />
+      <module name="springboot-demo" options="-parameters" />
+    </option>
+  </component>
+</project>
