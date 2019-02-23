@@ -8,7 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBoot06DataMybatisApplication {
 
+
+
 	public static void main(String[] args) {
+
+		String test = System.getProperty("aws.secretKey");
+
 		SpringApplication.run(SpringBoot06DataMybatisApplication.class, args);
 	}
 }
