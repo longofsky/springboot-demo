@@ -11,6 +11,7 @@ public class SpringBoot06DataMybatisApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

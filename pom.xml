@@ -21,9 +21,10 @@
         <module>spring-boot-01-helloworld</module>
         <module>spring-boot-01-helloworld-quick</module>
         <module>spring-boot-04-web-restfulcrud</module>
-        <module>spring-boot-04-web-restfulcrud</module>
         <module>spring-boot-02-config-autoconfig</module>
         <module>spring-boot-02-config-02</module>
+        <module>springboot-01-cache</module>
+        <module>spring-boot-06-data-mybatis</module>
     </modules>
 
 </project>
