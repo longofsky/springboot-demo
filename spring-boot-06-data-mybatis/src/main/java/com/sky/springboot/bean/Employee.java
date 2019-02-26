@@ -1,8 +1,17 @@
 package com.sky.springboot.bean;
 
-public class Employee {
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import java.io.Serializable;
+
+@ApiModel
+public class Employee implements Serializable {
+
+    @ApiModelProperty("员工ID")
     private Integer id;
+    @ApiModelProperty("员工名称")
     private String lastName;
     private Integer gender;
     private String email;
