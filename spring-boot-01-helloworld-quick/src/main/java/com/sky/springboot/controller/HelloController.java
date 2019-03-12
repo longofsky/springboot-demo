@@ -1,7 +1,10 @@
 package com.sky.springboot.controller;
 
 
+import com.adachina.cfgcenter.config.BaseGenericConfig;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,10 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Autowired
+    private BaseGenericConfig baseGenericConfig;
 
-    @RequestMapping("/hello")
-    public String hello(){
-        return "hello world quick!";
+    @RequestMapping("/hello/{key}")
+    public String hello(@PathVariable("key") String key){
+
+        String value = baseGenericConfig.getPropertyWithDft(key,"nullVlave");
+
+        return "hello world quick!"+value;
     }
 
     // RESTAPI的方式
